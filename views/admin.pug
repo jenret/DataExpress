@@ -1,0 +1,20 @@
+extends layout
+
+block title-name
+        title Admin
+
+block layout-content
+    h1 Admin page
+    span(class="error") #{errorMessage}
+    form(action="/admin", method="post")
+        h2 Make another user an admin or delete user: 
+        label(for="username") Username:
+        input(type="text", name="username", placeholder="username...", value=username required)
+
+        input(type="radio", name="selection", id="adminSelect", value="Admin")
+        label(for="adminSelect") Make Admin
+        input(type="radio", name="selection", id="deleteSelect", value="Delete")
+        label(for="deleteSelect") Delete User
+
+        br
+        input(type="submit", value="Submit")

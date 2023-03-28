@@ -1,0 +1,54 @@
+extends layout 
+
+block title-name
+    title Profile 
+
+block layout-content 
+    h1 Profile
+    div(class="userinfoBox")
+        span Username: #{model.username}
+        br
+        span  Password: #{model.password}
+        br
+        span Email: #{model.email}
+        br
+        span Age: #{model.age}
+    h2 Change account information: 
+    span(class="error") #{errorMessage}
+    form(action="/profile", method="post")
+        label(for="username") Username:
+        input(type="text", name="username", placeholder="username...", value=username)
+        br
+        label(for="password") Password:
+        input(type="password", name="password", placeholder="password...", value=password)
+        br
+        label(for="confirmPassword") Confirm Password:
+        input(type="password", name="confirmPassword", placeholder="password...", value=password)
+        br
+        label(for="email") Email:
+        input(type="text", name="email", placeholder="email...", value=email)
+        br
+        h2 Security questions 
+        p Choose favorite color 
+        input(type="radio", name="color", id="redA", value="red")
+        label(for="red") Red
+        input(type="radio", name="color", id="blueA", value="blue")
+        label(for="blue") Blue
+        input(type="radio", name="color", id="yellowA", value="yellow")
+        label(for="yellow") Yellow
+        p Choose the best drink
+        input(type="radio", name="drink", id="waterA", value="water")
+        label(for="water") Water
+        input(type="radio", name="drink", id="sodaA", value="soda")
+        label(for="soda") Soda
+        input(type="radio", name="drink", id="juiceA", value="juice")
+        label(for="juice") Juice
+        p Fa
+        input(type="radio", name="what", id="whatA", value="what")
+        label(for="what") What
+        input(type="radio", name="what", id="yesA", value="yes")
+        label(for="yes") Yes
+        input(type="radio", name="what", id="faA", value="fa")
+        label(for="fa") Fa
+        br
+        input(type="submit", value="Update")
