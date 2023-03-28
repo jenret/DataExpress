@@ -1,0 +1,114 @@
+/*
+colors
+
+dark color: 231942
+dark: 5E548E
+lavender: 9F86C0
+light: BE95C4
+pink: E0B1CB
+
+fonts
+
+thin: font-family: 'Inter', sans-serif;
+thick: font-family: 'Montserrat', sans-serif;
+*/
+
+nav {
+    background-color: #231942;
+    padding: 2%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 500%;
+}
+
+h2 {
+    color: #BE95C4;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 250%;
+}
+
+p {
+    color: #E0B1CB;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 150%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+form {
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+label {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+form input {
+    margin: 1%;
+    padding: 1%;
+}
+
+body {
+    background-color: #5E548E;
+}
+
+footer {
+    padding: 2%, 1%, 1%, 1%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.error {
+    color: red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.cockTitle {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 700%;
+}
+
+.userinfoBox {
+    color:#E0B1CB;
+    font-family: 'Inter', sans-serif;
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.myChartDiv {
+    max-width: 200;
+    max-height: 200;
+}

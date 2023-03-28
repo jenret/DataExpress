@@ -1,0 +1,16 @@
+extends layout 
+
+block title-name
+    title Login
+
+block layout-content 
+    h1 Login 
+    span(class="error") #{errorMessage}
+    form(action="/login", method="post")
+        label(for="username") Username:
+        input(type="text", name="username", placeholder="username...", value=username)
+        br
+        label(for="password") Password:
+        input(type="password", name="password", placeholder="password...", value=password)
+        br
+        input(type="submit", value="Login")

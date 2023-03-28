@@ -1,0 +1,19 @@
+extends layout
+
+block title-name
+        title Home
+
+block layout-content
+        script(src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js")
+        img(src="/images/cockbook.png", alt="purple chicken")
+        span(class="cockTitle") cockbook
+        p Welcome to cockbook, the facebook for chickens!
+        p Last visited: #{cookie}
+        h2 Chart Example 
+        div(class="myChartDiv")
+                canvas(id="myChart")
+        div(class="myChartDiv")
+                canvas(id="myChart2")
+        div(class="myChartDiv")
+                canvas(id="myChart3")
+        script(src="/js/site.js")

@@ -1,0 +1,25 @@
+doctype html
+html 
+    head 
+        block title-name
+        link(rel='stylesheet' href='/css/site.css')
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat&display=swap" rel="stylesheet")
+    body 
+        header 
+            nav 
+                a(href="/") Home
+                if adminUser 
+                    a(href="/admin") Admin
+                    a(href="/profile") Profile
+                    a(href="/logout") Logout
+                else if loggedInUser
+                    a(href="/profile") Profile
+                    a(href="/logout") Logout
+                else
+                    a(href="/register") Register
+                    a(href="/login") Login
+        section(class="content")
+            block layout-content
+        footer Copyright WoW Group 2022
